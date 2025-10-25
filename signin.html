@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/register.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo" class="logoresmi" />
+        </a>
+        <nav class="extra">
+          <ul>
+            <li>
+              <a href="#favourite-coffer">Favorite cofee</a>
+            </li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#mobile-app">mobile app</a></li>
+            <li><a href="#footer">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="cantacontainer">
+          <a href="./cart.html" class="cartagit">
+            <img
+              src="./images/shopping-bag.svg"
+              alt="shopping"
+              class="carresmi"
+            />
+            <span class="carsayisi"></span>
+          </a>
+          <a class="kose" href="./menu.html" style="pointer-events: none">
+            <span>Menu</span>
+            <img
+              class="kahveresm"
+              src="./images/coffee-cup.svg"
+              alt="coffe-cup"
+            />
+          </a>
+        </div>
+        <div class="normalolan" style="cursor: pointer" id="menubtn">
+          <img src="./images/State=default.svg" alt="iconn" />
+        </div>
+        <div class="normal-olmayan" id="yeterlan">
+          <img src="./images/State=active.svg" alt="lann" />
+        </div>
+      </div>
+      <nav class="dort" id="menuismenulan">
+        <ul>
+          <li><a href="#favourite-coffer">Favorite cofee</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#mobile-app">mobile app</a></li>
+          <li><a href="#footer">Contact us</a></li>
+          <li>
+            <a
+              class="moneyismoneylan"
+              href="./menu.html"
+              style="pointer-events: none"
+            >
+              <span>Menu</span>
+              <img
+                src="./images/coffee-cup.svg"
+                alt="coffe-cup"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main style="display: flex; justify-content: center; align-items: center">
+      <div
+        style="
+          width: 1360px;
+          height: 391px;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          align-items: center;
+        "
+      >
+        <span style="font-size: 60px; font-weight: 600; color: #403f3d"
+          >Sign in</span
+        >
+        <div
+          style="
+            width: 1360px;
+            height: 276px;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <form
+            id="signinform"
+            style="display: flex; flex-direction: column; gap: 40px"
+            autocomplete="off"
+          >
+            <div
+              style="
+                width: 1360px;
+                height: 192px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: center;
+              "
+            >
+              <div class="ucunbiri">
+                <label for="login">Login</label>
+                <input
+                  class="uclununinputu"
+                  type="text"
+                  id="login"
+                  name="login"
+                  placeholder="Login"
+                />
+                <span id="loginuyari" class="uyari"></span>
+              </div>
+              <div class="ucunbiri">
+                <label for="password">Password</label>
+                <input
+                  class="uclununinputu"
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                />
+                <span id="passworduyari" class="uyari"></span>
+              </div>
+            </div>
+            <div class="butonundivi">
+              <button class="kayitolbutonu" type="submit" disabled>
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="register-result"></div>
+      </div>
+    </main>
+    <footer id="footer" style="display: flex; justify-content: center">
+      <div class="contacts-container">
+        <div class="contacts-offer-container">
+          <span class="contacts-offer-yazi"
+            >Sip, Savor, Smile.
+            <span style="color: #8d7362"> It’s coffee time!</span></span
+          >
+          <div class="contacts-socials">
+            <img
+              src="./images/twitter-button-icon-light.svg"
+              alt="x"
+              class="twiteerfalan"
+            />
+            <img
+              src="./images/instagram-button-icon-light.svg"
+              class="twiteerfalan"
+              alt="i"
+            />
+            <img
+              src="./images/facebook-button-icon-light.svg"
+              class="twiteerfalan"
+              alt="f"
+            />
+          </div>
+        </div>
+        <div class="contacts-info">
+          <span class="contacts-info-yazi">Contact us</span>
+          <div class="contacts-info-street">
+            <a
+              class="contact-info-konum"
+              href="https://www.google.com/maps/place/Levent,+34330+Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul/@41.082451,29.0057013,15z/data=!3m1!4b1!4m6!3m5!1s0x14cab66eb1aaff27:0x306025824b2de11e!8m2!3d41.0818288!4d29.0183512!16zL20vMGJ0MzA5?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/pin-alt.svg"
+                alt="konum"
+                class="contact-icon"
+              />
+              <span class="contact-info-yazi-ayari">Levent, Istanbul</span>
+            </a>
+            <a class="contact-telefonlan" href="tel:+905313297984">
+              <img src="./images/phone.svg" alt="konum" class="contact-icon" />
+              <span class="contact-info-yazi-ayari">+90 531 329 7984</span>
+            </a>
+            <div style="width: 268px; height: 28px; display: flex; gap: 8px">
+              <img src="./images/clock.svg" alt="konum" class="contact-icon" />
+              <span class="contact-info-yazi-ayari"
+                >Mon-Sat: 9:00 AM – 23:00 PM</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/signin.ts"></script>
+    <script type="module" src="./src/menuopening.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="img/svg" href="./images/logosekme.svg" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#" style="pointer-events: none">
+          <img src="./images/logo.png" alt="logo" class="logoresmi" />
+        </a>
+        <nav class="extra">
+          <ul>
+            <li>
+              <a href="#favourite-coffer">Favorite cofee</a>
+            </li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#mobile-app">mobile app</a></li>
+            <li><a href="#footer">Contact us</a></li>
+          </ul>
+        </nav>
+        <a class="kose" href="./menu.html">
+          <span>Menu</span>
+          <img
+            class="kahveresm"
+            src="./images/coffee-cup.svg"
+            alt="coffe-cup"
+          />
+        </a>
+        <div class="normalolan" style="cursor: pointer" id="menubtn">
+          <img src="./images/State=default.svg" alt="iconn" />
+        </div>
+        <div class="normal-olmayan" id="yeterlan">
+          <img src="./images/State=active.svg" alt="lann" />
+        </div>
+      </div>
+      <nav class="dort" id="menuismenulan">
+        <ul>
+          <li><a href="#favourite-coffer">Favorite cofee</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#mobile-app">mobile app</a></li>
+          <li><a href="#footer">Contact us</a></li>
+          <li>
+            <a class="moneyismoneylan" href="./menu.html">
+              <span>Menu</span>
+              <img
+                src="./images/coffee-cup.svg"
+                alt="coffe-cup"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 100px;
+        "
+      >
+        <div class="audiodahil">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 40px; /*!--burası değişti*/
+            "
+          >
+            <source
+              src="./images/2909914-uhd_3840_2024_24fps.mp4"
+              type="video/mp4"
+            />
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+          <div class="videoaltindakiler">
+            <div class="ikispankapsayici">
+              <span style="color: #b0907a">Enjoy</span>
+              <span style="color: #e1d4c9"
+                >premium coffee at our charming cafe</span
+              >
+            </div>
+            <div class="videoyazisi">
+              With its inviting atmosphere and delicious coffee options, the
+              Coffee House Resource is a popular destination for coffee lovers
+              and those seeking a warm and inviting space to enjoy their
+              favorite beverage.
+            </div>
+            <a class="butonundur" href="./menu.html">
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 200px;
+                  height: 64px;
+                "
+              >
+                <span class="menumenu">Menu</span>
+                <img
+                  src="./images/coffee-cup.svg"
+                  alt="coffe-cup"
+                  class="iconlaralbayim"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="favoricontainer"
+          style="
+            width: 1360px;
+            height: 799px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+          "
+        >
+          <div class="sldiercontainerbaslik">
+            <span style="color: #403f3d"
+              >Choose your <span style="color: #b0907a">favorite</span>
+              <span class="kahvekelimesi">coffee</span></span
+            >
+          </div>
+          <div class="hatamesaji">
+            Something went wrong. Please, refresh the page
+          </div>
+          <div class="loader">
+            <div class="spinner"></div>
+          </div>
+          <div class="selamlar">
+            <div
+              class="sliderfavcofe"
+              style="
+                width: 1360px;
+                height: 640px;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <div class="soloklar">&lt;-</div>
+              <div
+                class="ortadakifav"
+                style="
+                  width: 1240px;
+                  height: 640px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  align-items: center;
+                "
+              ></div>
+              <div class="sagoklar">-&gt;</div>
+            </div>
+            <!-- <div class="sadece tutunbana" style="height: 4px"></div>-->
+            <div class="controlcontainer">
+              <div class="control"></div>
+              <div class="control"></div>
+              <div class="control"></div>
+            </div>
+          </div>
+        </div>
+        <!--
+            <div id="loader">
+                <div class="spinner"></div>
+            </div>
+        -->
+
+        <!--
+            <div class="oklardahil" id="favourite-coffer">
+                <div class="soloklar">&lt;-</div>
+                <div class="slidercontainer active">
+                    <div class="sldiercontainerbaslik">
+                        <span style="color: #403f3d"
+                        >Choose your <span style="color: #b0907a">favorite</span>
+                        <span class="kahvekelimesi">coffee</span></span
+                        >
+                    </div>
+                    <div class="sonradan">
+              <div class="hepsonradan">
+                  <div
+                  style="
+                  display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                  "
+                  >
+                  <div class="resimveok">
+                      <img
+                      src="./images/coffee-slider-1.svg"
+                      alt="coffeslider1"
+                      class="sliderimage"
+                      />
+                    </div>
+                    <div class="slideryazicontainer">
+                        <span
+                        style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #403f3d;
+                        font-size: 24px;
+                        "
+                        >S’mores Frappuccino</span
+                        >
+                        <span
+                        style="font-size: 16px; line-height: 150%; color: #403f3d"
+                        >This new drink takes an espresso and mixes it with brown
+                        sugar and cinnamon before being
+                        <span class="millk">topped with oat milk.</span></span
+                        >
+                        <span
+                        style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #403f3d;
+                        font-size: 24px;
+                        font-weight: bold;
+                        "
+                        >$5.50</span
+                        >
+                  </div>
+                </div>
+              </div>
+              <div
+              style="
+                  display: flex;
+                  width: 144px;
+                  justify-content: space-between;
+                  align-items: center;
+                  "
+              >
+                <div
+                  style="
+                    width: 40px;
+                    height: 4px;
+                    background-color: #665f55;
+                    border-radius: 20px;
+                  "
+                  ></div>
+                  <div
+                  style="
+                  width: 40px;
+                  height: 4px;
+                  background-color: #c1b6ad;
+                  border-radius: 20px;
+                  "
+                  ></div>
+                  <div
+                  style="
+                  width: 40px;
+                  height: 4px;
+                    background-color: #c1b6ad;
+                    border-radius: 20px;
+                    "
+                    ></div>
+                </div>
+            </div>
+        </div>
+        <div class="slidercontainer">
+            <div class="sldiercontainerbaslik">
+                <span style="color: #403f3d"
+                >Choose your <span style="color: #b0907a">favorite</span>
+                <span class="kahvekelimesi">coffee</span></span
+                >
+            </div>
+            <div class="sonradan">
+                <div class="hepsonradan">
+                    <div
+                    style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    "
+                    >
+                    <div class="resimveok">
+                        <img
+                        src="coffee-slider-2.svg"
+                        alt="coffeslider1"
+                        class="sliderimage"
+                        />
+                    </div>
+                    <div class="slideryazicontainer">
+                        <span
+                        style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #403f3d;
+                        font-size: 24px;
+                        font-weight: bold;
+                        "
+                        >Caramel Macchiato</span
+                        >
+                        <span
+                        style="font-size: 16px; line-height: 150%; color: #403f3d"
+                        >Fragrant and unique classic espresso with rich
+                        caramel-peanut syrup, with the addition of delicate cream
+                        under whipped thick foam.</span
+                        >
+                        <span
+                        style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #403f3d;
+                        font-size: 24px;
+                        font-weight: bold;
+                        "
+                        >$5.00</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <div
+            style="
+            display: flex;
+            width: 144px;
+            justify-content: space-between;
+            align-items: center;
+            /*margin-top: 9px;*/
+            "
+            >
+            <div
+            style="
+            width: 40px;
+            height: 4px;
+            background-color: #c1b6ad;
+            border-radius: 20px;
+            "
+            ></div>
+            <div
+            style="
+            width: 40px;
+            height: 4px;
+            background-color: #665f55;
+            border-radius: 20px;
+            "
+            ></div>
+            <div
+            style="
+            width: 40px;
+            height: 4px;
+            background-color: #c1b6ad;
+            border-radius: 20px;
+            "
+            ></div>
+        </div>
+    </div>
+</div>
+<div class="slidercontainer">
+    <div class="sldiercontainerbaslik">
+        <span style="color: #403f3d"
+        >Choose your <span style="color: #b0907a">favorite</span>
+        <span class="kahvekelimesi">coffee</span></span
+        >
+    </div>
+    <div class="sonradan">
+        <div class="hepsonradan">
+            <div
+            style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            "
+            >
+            <div class="resimveok">
+                <img
+                src="coffee-slider-3.svg"
+                alt="coffeslider1"
+                class="sliderimage"
+                />
+            </div>
+            <div class="slideryazicontainer">
+                <span
+                style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #403f3d;
+                font-size: 24px;
+                font-weight: bold;
+                "
+                >Ice coffee</span
+                >
+                <span
+                style="
+                font-size: 16px;
+                line-height: 150%;
+                color: #403f3d;
+                text-align: center;
+                "
+                >A popular summer drink that tones and invigorates.
+                Prepared from coffee, milk and ice.</span
+                >
+                <span
+                style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #403f3d;
+                font-size: 24px;
+                font-weight: bold;
+                      "
+                      >$4.50</span
+                    >
+                </div>
+            </div>
+        </div>
+        <div
+        style="
+        display: flex;
+        width: 144px;
+        justify-content: space-between;
+        align-items: center;
+        "
+        >
+        <div
+        style="
+        width: 40px;
+        height: 4px;
+        background-color: #c1b6ad;
+        border-radius: 20px;
+        "
+        ></div>
+        
+        <div
+        style="
+        width: 40px;
+        height: 4px;
+        background-color: #c1b6ad;
+        border-radius: 20px;
+        "
+        ></div>
+        <div
+        style="
+        width: 40px;
+        height: 4px;
+        background-color: #665f55;
+        border-radius: 20px;
+        "
+        ></div>
+    </div>
+</div>
+</div>
+<div class="sagoklar">-&gt;</div>
+
+</div>
+-->
+        <div class="about" id="about">
+          <span class="perfectler"
+            >Resource is
+            <span style="color: #8d7362">the perfect and cozy place</span>
+            where you can enjoy a variety of hot beverages, relax, catch up with
+            friends, or get some work done.</span
+          >
+          <div class="about-images">
+            <div class="about-images-column-1">
+              <div class="column-1-first"></div>
+              <div class="column-1-second"></div>
+            </div>
+            <div class="about-images-column-2">
+              <div class="column-2-first"></div>
+              <div class="column-2-second"></div>
+            </div>
+          </div>
+        </div>
+        <div class="mobileapp" id="mobile-app">
+          <div class="mobile-app-offer">
+            <span class="mobile-app-download"
+              ><span style="color: #8d7362">Download</span> our apps to start
+              ordering</span
+            >
+            <span class="mobile-app-resource"
+              >Download the Resource app today and experience the comfort of
+              ordering your favorite coffee from wherever you are</span
+            >
+            <div class="ikiicon">
+              <div class="appleicon">
+                <img
+                  src="./images/appleicon.svg"
+                  alt="appple"
+                  class="appleresim"
+                />
+                <div class="appleyani">
+                  <span class="appleyaziboyut-1">Available on the</span>
+                  <span class="appleyaziboyut-2">App Store</span>
+                </div>
+              </div>
+              <div class="appleicon">
+                <img
+                  src="./images/ucgenicon.svg"
+                  alt="appple"
+                  class="appleresim"
+                />
+                <div class="appleyani">
+                  <span class="appleyaziboyut-1">Available on the</span>
+                  <span class="appleyaziboyut-2">App Store</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images/mobile-screens.svg"
+            alt="asdasd"
+            class="mobile-screens-image"
+          />
+        </div>
+      </div>
+    </main>
+    <footer id="footer" style="display: flex; justify-content: center">
+      <div class="contacts-container">
+        <div class="contacts-offer-container">
+          <span class="contacts-offer-yazi"
+            >Sip, Savor, Smile.
+            <span style="color: #8d7362"> It’s coffee time!</span></span
+          >
+          <div class="contacts-socials">
+            <img
+              src="./images/twitter-button-icon-light.svg"
+              alt="x"
+              class="twiteerfalan"
+            />
+            <img
+              src="./images/instagram-button-icon-light.svg"
+              class="twiteerfalan"
+              alt="i"
+            />
+            <img
+              src="./images/facebook-button-icon-light.svg"
+              class="twiteerfalan"
+              alt="f"
+            />
+          </div>
+        </div>
+        <div class="contacts-info">
+          <span class="contacts-info-yazi">Contact us</span>
+          <div class="contacts-info-street">
+            <a
+              class="contact-info-konum"
+              href="https://www.google.com/maps/place/Levent,+34330+Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul/@41.082451,29.0057013,15z/data=!3m1!4b1!4m6!3m5!1s0x14cab66eb1aaff27:0x306025824b2de11e!8m2!3d41.0818288!4d29.0183512!16zL20vMGJ0MzA5?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/pin-alt.svg"
+                alt="konum"
+                class="contact-icon"
+              />
+              <span class="contact-info-yazi-ayari">Levent, Istanbul</span>
+            </a>
+            <a class="contact-telefonlan" href="tel:+905313297984">
+              <img src="./images/phone.svg" alt="konum" class="contact-icon" />
+              <span class="contact-info-yazi-ayari">+90 531 329 7984</span>
+            </a>
+            <div style="width: 268px; height: 28px; display: flex; gap: 8px">
+              <img src="./images/clock.svg" alt="konum" class="contact-icon" />
+              <span class="contact-info-yazi-ayari"
+                >Mon-Sat: 9:00 AM – 23:00 PM</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/menuopening.ts"></script>
+    <script type="module" src="./src/index.ts"></script>
+  </body>
+</html>

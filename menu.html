@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="img/svg" href="./images/logosekme.svg" />
+
+    <link rel="stylesheet" href="./src/menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo" class="logoresmi" />
+        </a>
+        <nav class="extra">
+          <ul>
+            <li>
+              <a href="#favourite-coffer">Favorite cofee</a>
+            </li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#mobile-app">mobile app</a></li>
+            <li><a href="#footer">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="cantacontainer">
+          <a href="./cart.html" class="cartagit">
+            <img
+              src="./images/shopping-bag.svg"
+              alt="shopping"
+              class="carresmi"
+            />
+            <span class="carsayisi"></span>
+          </a>
+          <a class="kose" href="./menu.html" style="pointer-events: none">
+            <span>Menu</span>
+            <img
+              class="kahveresm"
+              src="./images/coffee-cup.svg"
+              alt="coffe-cup"
+            />
+          </a>
+        </div>
+        <div class="normalolan" style="cursor: pointer" id="menubtn">
+          <img src="./images/State=default.svg" alt="iconn" />
+        </div>
+        <div class="normal-olmayan" id="yeterlan">
+          <img src="./images/State=active.svg" alt="lann" />
+        </div>
+      </div>
+      <nav class="dort" id="menuismenulan">
+        <ul>
+          <li><a href="#favourite-coffer">Favorite cofee</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#mobile-app">mobile app</a></li>
+          <li><a href="#footer">Contact us</a></li>
+          <li>
+            <a
+              class="moneyismoneylan"
+              href="./menu.html"
+              style="pointer-events: none"
+            >
+              <span>Menu</span>
+              <img
+                src="./images/coffee-cup.svg"
+                alt="coffe-cup"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div class="menu-container">
+          <div class="offering">
+            <span class="offering-text">
+              <span class="line">Behind each of our</span><br class="brulan" />
+              <span class="line">cups hides an</span><br class="brulan" />
+              <span class="line-accent">amazing surprise</span>
+            </span>
+
+            <div class="tab-container">
+              <div id="coffeebtn" class="coffee-container">
+                <div class="coffee-round">
+                  <img
+                    src="./images/cofferound.png"
+                    alt="beyaz"
+                    style="width: 20px; height: 20px"
+                  />
+                </div>
+                <span class="coffee-text">coffee</span>
+              </div>
+              <div id="teabutton" class="tea-container">
+                <div class="tea-round">
+                  <img
+                    src="./images/beyaztepot.png"
+                    alt="beyaz"
+                    style="width: 20px; height: 20px"
+                  />
+                </div>
+                <span class="tea-text">Tea</span>
+              </div>
+              <div id="dessertbtn" class="dessert-container">
+                <div class="dessert-round">
+                  <img
+                    src="./images/dessertround.png"
+                    alt="beyaz"
+                    style="width: 20px; height: 20px"
+                  />
+                </div>
+                <span class="dessert-text">Dessert</span>
+              </div>
+            </div>
+          </div>
+          <div class="hatamesaji">
+            Something went wrong. Please, refresh the page
+          </div>
+          <div class="menuloader">
+            <div class="menuspinner"></div>
+          </div>
+          <div class="menu-products"></div>
+          <button class="reloadbutonu" id="reloadbutonu">
+            <img
+              src="./images/refresh.svg"
+              alt="refresh"
+              style="width: 24px; height: 24px"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="modalcarpi">
+          <img
+            src="./images/button-close.svg"
+            alt="buttonclose"
+            class="modalresim"
+          />
+        </div>
+        <div class="modal">
+          <div class="resim-modal">
+            <img src="./images/Latte.svg" alt="sssss" class="modalinresmi" />
+          </div>
+          <div class="description-contaier">
+            <div class="titlelann">
+              <span class="titlelan-name"></span>
+              <span class="real-description"></span>
+            </div>
+            <div class="sizze">
+              <span>size</span>
+              <div class="tabbblar">
+                <div class="ilk-iki">
+                  <div class="kucuk active">
+                    <div class="kucuk-daire active">S</div>
+                    <span class="kucukisim active"></span>
+                  </div>
+                  <div class="orta">
+                    <div class="orta-daire">M</div>
+                    <span class="ortaisim"></span>
+                  </div>
+                </div>
+                <div class="buyuk">
+                  <div class="buyuk-daire">L</div>
+                  <span class="buyukisim"></span>
+                </div>
+              </div>
+            </div>
+            <div class="sizze">
+              <span>Additives</span>
+              <div class="tabbblar">
+                <div class="ilk-iki">
+                  <div class="kucuk1">
+                    <div class="kucuk1-daire">1</div>
+                    <span class="kucuk1-isim">dinamik</span>
+                  </div>
+                  <div class="orta1">
+                    <div class="orta1-daire">2</div>
+                    <span class="orta1-isim">dinamik</span>
+                  </div>
+                </div>
+                <div class="buyuk1">
+                  <div class="buyuk1-daire">3</div>
+                  <span class="buyuk1-isim">dinamik</span>
+                </div>
+              </div>
+            </div>
+            <div class="totall">
+              <span>Total:</span>
+              <div style="display: flex; gap: 8px">
+                <span
+                  class="original-price"
+                  style="color: #908982; text-decoration: line-through"
+                ></span>
+                <span class="price">fiyat</span>
+              </div>
+            </div>
+            <div class="uyari">
+              <img src="./images/info-empty.svg" alt="iii" class="resimboyut" />
+              <span style="font-size: 10px; font-weight: 600"
+                >The cost is not final. Download our mobile app to see the final
+                price and place your order. Earn loyalty points and enjoy your
+                favorite coffee with up to 20% discount.</span
+              >
+            </div>
+            <button class="kapatmatusu">Add to cart</button>
+          </div>
+        </div>
+        <div class="modalloader">
+          <div class="modalspinner"></div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer" style="display: flex; justify-content: center">
+      <div class="contacts-container">
+        <div class="contacts-offer-container">
+          <span class="contacts-offer-yazi"
+            >Sip, Savor, Smile.
+            <span style="color: #8d7362"> It’s coffee time!</span></span
+          >
+          <div class="contacts-socials">
+            <img
+              src="./images/twitter-button-icon-light.svg"
+              alt="x"
+              class="twiteerfalan"
+            />
+            <img
+              src="./images/instagram-button-icon-light.svg"
+              class="twiteerfalan"
+              alt="i"
+            />
+            <img
+              src="./images/facebook-button-icon-light.svg"
+              class="twiteerfalan"
+              alt="f"
+            />
+          </div>
+        </div>
+        <div class="contacts-info">
+          <span class="contacts-info-yazi">Contact us</span>
+          <div class="contacts-info-street">
+            <a
+              class="contact-info-konum"
+              href="https://www.google.com/maps/place/Levent,+34330+Be%C5%9Fikta%C5%9F%2F%C4%B0stanbul/@41.082451,29.0057013,15z/data=!3m1!4b1!4m6!3m5!1s0x14cab66eb1aaff27:0x306025824b2de11e!8m2!3d41.0818288!4d29.0183512!16zL20vMGJ0MzA5?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/pin-alt.svg"
+                alt="konum"
+                class="contact-icon"
+              />
+              <span class="contact-info-yazi-ayari">Levent, Istanbul</span>
+            </a>
+            <a class="contact-telefonlan" href="tel:+905313297984">
+              <img src="./images/phone.svg" alt="konum" class="contact-icon" />
+              <span class="contact-info-yazi-ayari">+90 531 329 7984</span>
+            </a>
+            <div style="width: 268px; height: 28px; display: flex; gap: 8px">
+              <img src="./images/clock.svg" alt="konum" class="contact-icon" />
+              <span class="contact-info-yazi-ayari"
+                >Mon-Sat: 9:00 AM – 23:00 PM</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/menuopening.ts"></script>
+    <script type="module" src="./src/menu.ts"></script>
+  </body>
+</html>
