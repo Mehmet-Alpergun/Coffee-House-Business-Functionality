@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/deployet/",
+  base: "/Coffee-House-Business-Functionality/",
   build: {
     rollupOptions: {
       input: {
