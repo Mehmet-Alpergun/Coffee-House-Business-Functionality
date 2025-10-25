@@ -83,7 +83,6 @@ function createOrderPayload(products: Product[]): Fonkdon {
   console.log(totalPrice);
 
   //const totalPrice: number = prices.reduce((sum, price) => sum + price, 0);
-
   return { items, totalPrice };
 }
 const ali: Fonkdon = createOrderPayload(urunler);
