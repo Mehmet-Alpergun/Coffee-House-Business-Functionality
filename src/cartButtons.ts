@@ -124,18 +124,18 @@ confirmbuton?.addEventListener("click", async () => {
 
       //alert("Siparişiniz başarıyla onaylandı!");
       localStorage.removeItem("selectedProducts");
-      window.location.href = "cart.html";
+      //window.location.href = "cart.html";
       success?.classList.add("active");
       setTimeout(() => {
         success?.classList.remove("active");
-      }, 4000);
+      }, 5000);
     } else {
       loader?.classList.remove("active");
       cartcontainer?.classList.remove("active");
       hatamesaji?.classList.add("active");
       setTimeout(() => {
         hatamesaji?.classList.remove("active");
-      }, 4000);
+      }, 5000);
 
       //alert("Sipariş başarısız:");
     }
@@ -145,6 +145,6 @@ confirmbuton?.addEventListener("click", async () => {
     setTimeout(() => {
       hatamesaji?.classList.remove("active");
     }, 4000);
-    alert("Bir hata oluştu. Lütfen tekrar deneyin.");
+    // alert("Something went wrong. Please, try again");
   }
 });
