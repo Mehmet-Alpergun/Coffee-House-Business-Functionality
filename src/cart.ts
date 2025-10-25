@@ -43,74 +43,9 @@ const urunler: Product[] = getSelectedProducts();
 const user: User | null = isUserLoggedIn();
 console.log(urunler);
 
-/**urunleri içi hazırlandı
- */
-// const productcontainer: HTMLDivElement | null = document.querySelector(
-//   ".gercekproductcontianer"
-// );
-// const productcontainertrash: HTMLImageElement | null =
-//   document.querySelector(".trashimg");
-// const productcontainertrash: HTMLImageElement | null =
-//   document.querySelector(".proimage");
-// //const productcontainer: HTMLDivElement | null = document.querySelector(".gercekproductcontianer")
-// const productname: HTMLSpanElement | null = document.querySelector(".proname");
-// const productinfo: HTMLSpanElement | null = document.querySelector(".proinfo");
-// const productcartfiyat: HTMLDivElement | null =
-//   document.querySelector(".carfiyatlari");
-
 //********** */
 const productscontainer: HTMLDivElement | null =
   document.querySelector(".productscontainer");
-// function displayproducts(): void {
-//   const urunler: Product[] = getSelectedProducts();
-
-//   urunler.forEach((urun: Product) => {
-//     const gercekproduct: HTMLDivElement = document.createElement("div");
-//     gercekproduct.classList.add("gercekproductcontianer");
-
-//     // 🗑️ Çöp ikonu
-//     const cardImg: HTMLImageElement = document.createElement("img");
-//     cardImg.classList.add("trashimg");
-//     cardImg.src = `./images/trash.svg`;
-//     cardImg.alt = "Ürünü sil";
-//     // silme işlemi için event ekleyebilirsin:
-//     // cardImg.addEventListener("click", () => removeProductFromCart(urun.id));
-//     gercekproduct.appendChild(cardImg);
-
-//     // 📦 Ürün görseli
-//     const cardproImg: HTMLImageElement = document.createElement("img");
-//     cardproImg.classList.add("proimage");
-//     cardproImg.src = `./images/${urun.name}.svg`; // örnek olarak
-//     cardproImg.alt = urun.name;
-//     gercekproduct.appendChild(cardproImg);
-
-//     // 🧾 Ürün bilgileri alanı
-//     const productInfoContainer: HTMLDivElement = document.createElement("div");
-//     productInfoContainer.classList.add("productinfocontainer");
-
-//     const proname: HTMLSpanElement = document.createElement("span");
-//     proname.classList.add("proname");
-//     proname.textContent = urun.name;
-//     productInfoContainer.appendChild(proname);
-
-//     const proinfo: HTMLSpanElement = document.createElement("span");
-//     proinfo.classList.add("proinfo");
-//     proinfo.textContent = `${urun.size} cm | ${urun.additives.join(", ")}`;
-//     productInfoContainer.appendChild(proinfo);
-
-//     gercekproduct.appendChild(productInfoContainer);
-
-//     // 💰 Fiyat bilgisi
-//     const carfiyatlari: HTMLDivElement = document.createElement("div");
-//     carfiyatlari.classList.add("carfiyatlari");
-//     carfiyatlari.textContent = `${urun.discountedPrice} ₺ x ${urun.quantity}`;
-//     gercekproduct.appendChild(carfiyatlari);
-
-//     // Ürünü ana container’a ekle
-//     productscontainer?.appendChild(gercekproduct);
-//   });
-// }
-//const urunler: Product[] = getSelectedProducts();
 
 displayproducts();
 
