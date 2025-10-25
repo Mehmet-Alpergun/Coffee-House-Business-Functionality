@@ -132,6 +132,9 @@ async function loadCategory(category: string): Promise<void> {
 
   const errortext: HTMLDivElement | null =
     document.querySelector<HTMLDivElement>(".hatamesaji");
+  loader?.classList.remove("active");
+  errortext?.classList.remove("active");
+  productsContainer?.classList.remove("active");
   try {
     const res: Response = await fetch(
       "https://6kt29kkeub.execute-api.eu-central-1.amazonaws.com/products"
