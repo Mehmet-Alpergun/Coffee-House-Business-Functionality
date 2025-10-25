@@ -50,13 +50,13 @@ function validateField(field: HTMLElement): string | null {
   if (field === login) {
     const value: string = login.value.trim();
     if (!/^[A-Za-z][A-Za-z]{2,}$/.test(value))
-      return "Kullanıcı adı en az 3 karakter olmalı ve harfle başlamalıdır.";
+      return "Must be at least 3 characters long. Must start with a letter.Only English alphabet letters are allowed.";
   }
 
   if (field === password) {
     const value: string = password.value;
     if (!/^(?=.*[!@#$%^&*(),.?":{}|<>]).{6,}$/.test(value))
-      return "Şifre en az 6 karakter ve 1 özel karakter içermelidir.";
+      return "Must be at least 6 characters long. Must contain at least 1 special character.";
   }
   return null;
 }

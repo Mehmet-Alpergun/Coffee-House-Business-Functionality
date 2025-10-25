@@ -94,13 +94,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (field === loginInput) {
       const value: string = loginInput.value.trim();
       if (!/^[A-Za-z][A-Za-z]{2,}$/.test(value))
-        return "Kullanıcı adı en az 3 karakter olmalı ve harfle başlamalıdır.";
+        return "At least 3 characters, start with a letter, only English letters are allowed.";
     }
 
     if (field === passwordInput) {
       const value: string = passwordInput.value;
       if (!/^(?=.*[!@#$%^&*(),.?":{}|<>]).{6,}$/.test(value))
-        return "Şifre en az 6 karakter ve 1 özel karakter içermelidir.";
+        return "At least 6 characters and must contain at least 1 special character.";
     }
 
     if (field === confirmPasswordInput) {
@@ -108,21 +108,20 @@ document.addEventListener("DOMContentLoaded", () => {
         confirmPasswordInput.value !== passwordInput?.value ||
         confirmPasswordInput.value == ""
       )
-        return "Şifreler eşleşmiyor.";
+        return "The two fields must match";
     }
 
     if (field === citySelect) {
-      if (!citySelect.value) return "Lütfen şehir seçiniz.";
+      if (!citySelect.value) return "please select a city.";
     }
 
     if (field === streetSelect) {
-      if (!streetSelect.value) return "Lütfen sokak seçiniz.";
+      if (!streetSelect.value) return "Please Select a street.";
     }
 
     if (field === houseNumberInput) {
       const num: number = Number(houseNumberInput.value);
-      if (isNaN(num) || num < 2)
-        return "Ev numarası 2 veya daha büyük olmalıdır.";
+      if (isNaN(num) || num < 2) return "Value must be greater than 1.";
     }
 
     return null; // Hata yok
