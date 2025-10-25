@@ -154,6 +154,20 @@ async function fetchSlides(): Promise<void> {
 //     //slider.appendChild(slide);
 //   });
 // }
+function isUserLoggedIn(): User | null {
+  const userString: string | null = localStorage.getItem("user");
+  const user: User | null = userString ? JSON.parse(userString) : null;
+  return user;
+}
+interface User {
+  id: number;
+  login: string;
+  paymentMethod: string;
+  street: string;
+  houseNumber: number;
+  city: string;
+  createdAt: string;
+}
 
 function showSlide(index: number): void {
   const slider: HTMLDivElement | null =
@@ -166,6 +180,7 @@ function showSlide(index: number): void {
   slider.innerHTML = ""; // Önceki slide'ı temizle
 
   const item: Product = slidesData[index];
+  const user: User | null = isUserLoggedIn();
 
   const slideImg: HTMLImageElement = document.createElement("img");
   slideImg.classList.add("yeniresim");
@@ -186,30 +201,40 @@ function showSlide(index: number): void {
 
   infoContainer.appendChild(spanTitle);
   infoContainer.appendChild(spanDesc);
+  if (user) {
+    if (item.discountPrice === null) {
+      const spanPrice: HTMLSpanElement = document.createElement("span");
+      spanPrice.classList.add("spanprice");
+      spanPrice.textContent = `$${Number(item.price).toFixed(2)}`;
 
-  if (item.discountPrice === null) {
+      infoContainer.appendChild(spanPrice);
+    } else {
+      console.log("object");
+      const priceContainer: HTMLDivElement = document.createElement("div");
+      priceContainer.classList.add("pricecontain");
+
+      const discountspanPrice: HTMLSpanElement = document.createElement("span");
+      discountspanPrice.classList.add("spanprice");
+      discountspanPrice.textContent = `$${Number(item.discountPrice).toFixed(
+        2
+      )}`;
+      priceContainer.appendChild(discountspanPrice);
+
+      const spanPrice: HTMLSpanElement = document.createElement("span");
+      spanPrice.classList.add("spanpricefirst");
+      spanPrice.textContent = `$${Number(item.price).toFixed(2)}`;
+      priceContainer.appendChild(spanPrice);
+
+      infoContainer.appendChild(priceContainer);
+    }
+  } else {
     const spanPrice: HTMLSpanElement = document.createElement("span");
     spanPrice.classList.add("spanprice");
     spanPrice.textContent = `$${Number(item.price).toFixed(2)}`;
 
     infoContainer.appendChild(spanPrice);
-  } else {
-    console.log("object");
-    const priceContainer: HTMLDivElement = document.createElement("div");
-    priceContainer.classList.add("pricecontain");
-
-    const discountspanPrice: HTMLSpanElement = document.createElement("span");
-    discountspanPrice.classList.add("spanprice");
-    discountspanPrice.textContent = `$${Number(item.discountPrice).toFixed(2)}`;
-    priceContainer.appendChild(discountspanPrice);
-
-    const spanPrice: HTMLSpanElement = document.createElement("span");
-    spanPrice.classList.add("spanpricefirst");
-    spanPrice.textContent = `$${Number(item.price).toFixed(2)}`;
-    priceContainer.appendChild(spanPrice);
-
-    infoContainer.appendChild(priceContainer);
   }
+
   slider.appendChild(infoContainer);
   updateActiveControl();
 }
