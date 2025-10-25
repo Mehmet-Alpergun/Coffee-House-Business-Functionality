@@ -43,7 +43,6 @@ const urunler: Product[] = getSelectedProducts();
 const user: User | null = isUserLoggedIn();
 console.log(urunler);
 
-//********** */
 const productscontainer: HTMLDivElement | null =
   document.querySelector(".productscontainer");
 
