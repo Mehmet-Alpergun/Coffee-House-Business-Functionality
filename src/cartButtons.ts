@@ -100,6 +100,8 @@ confirmbuton?.addEventListener("click", async () => {
   cartcontainer?.classList.add("active");
 
   //const user: User = isUserLoggedIn();
+  success?.classList.remove("active");
+
   const urunler: Product[] = getSelectedProducts();
 
   if (urunler.length === 0) {
@@ -124,26 +126,31 @@ confirmbuton?.addEventListener("click", async () => {
 
       //alert("Siparişiniz başarıyla onaylandı!");
       localStorage.removeItem("selectedProducts");
+      const carsayisi: HTMLSpanElement | null =
+        document.querySelector(".carsayisi");
+      if (carsayisi) carsayisi.textContent = "";
+
       //window.location.href = "cart.html";
       success?.classList.add("active");
-      setTimeout(() => {
-        success?.classList.remove("active");
-      }, 5000);
     } else {
       loader?.classList.remove("active");
       cartcontainer?.classList.remove("active");
       hatamesaji?.classList.add("active");
+      if (confirmbuton) confirmbuton.disabled = true;
       setTimeout(() => {
         hatamesaji?.classList.remove("active");
-      }, 5000);
+        confirmbuton.disabled = false;
+      }, 4000);
 
       //alert("Sipariş başarısız:");
     }
   } catch (error) {
     console.error("İstek hatası:", error);
     hatamesaji?.classList.add("active");
+    if (confirmbuton) confirmbuton.disabled = true;
     setTimeout(() => {
       hatamesaji?.classList.remove("active");
+      confirmbuton.disabled = false;
     }, 4000);
     // alert("Something went wrong. Please, try again");
   }

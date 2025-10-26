@@ -2504,3 +2504,26 @@ header {
 .menuloader.active {
   display: none;
 }
+
+.cantacontainer {
+  display: flex;
+  gap: 32px;
+}
+
+.cartagit {
+  text-decoration: none;
+  display: none;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.cartagit.active {
+  display: flex;
+}
+.carresmi {
+  width: 20px;
+  height: 20px;
+}
+.carsayisi {
+  color: #403f3d;
+}

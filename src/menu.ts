@@ -659,3 +659,48 @@ const modalkapat: HTMLImageElement | null =
 modalkapat?.addEventListener("click", () => {
   closeModal();
 });
+
+/**
+ */
+
+function isUserLoggedIn(): User | null {
+  const userString: string | null = localStorage.getItem("user");
+  const user: User | null = userString ? JSON.parse(userString) : null;
+  return user;
+}
+function getSelectedProducts(): Product[] {
+  const user: User | null = isUserLoggedIn();
+  console.log(user);
+  const data: string | null = localStorage.getItem("selectedProducts");
+  if (!data) return [];
+  try {
+    return JSON.parse(data) as Product[];
+  } catch (error) {
+    console.error("LocalStorage parse hatası:", error);
+    return [];
+  }
+}
+interface Product {
+  id: number;
+  name: string;
+  originalPrice: string;
+  size: number;
+  discountedPrice: string;
+  additives: string[];
+  quantity: number;
+  // başka alanlar da olabilir
+  category: string;
+}
+
+const urunler: Product[] = getSelectedProducts();
+if (user) {
+  cartagit?.classList.add("active");
+  if (urunler.length > 0) {
+    carsayisi!.textContent = urunler.length.toString();
+  }
+} else {
+  if (urunler.length > 0) {
+    cartagit?.classList.add("active");
+    carsayisi!.textContent = urunler.length.toString();
+  }
+}

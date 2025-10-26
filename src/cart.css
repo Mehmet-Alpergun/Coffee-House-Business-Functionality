@@ -2748,6 +2748,7 @@ header {
   border: 1px solid #665f55;
   background: transparent;
   color: #403f3d;
+  cursor: pointer;
 }
 .butonlarikidivi {
   width: 1360px;
@@ -2765,6 +2766,7 @@ header {
   border: 1px solid #665f55;
   background: transparent;
   color: #403f3d;
+  cursor: pointer;
 }
 
 .registerbutonu {
@@ -2774,6 +2776,7 @@ header {
   border: 1px solid #665f55;
   background: transparent;
   color: #403f3d;
+  cursor: pointer;
 }
 
 /**/
