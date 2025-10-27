@@ -2641,6 +2641,7 @@ header {
 .proname {
   font-size: 24px;
   font-weight: 600;
+  color: #403f3d;
 }
 .productinfocontainer {
   width: 1107px;
@@ -2660,6 +2661,7 @@ header {
 .urunfiyat {
   font-size: 24px;
   font-weight: 600;
+  color: #403f3d;
 }
 .eskiurunfiyat {
   font-size: 24px;
@@ -2684,10 +2686,12 @@ header {
 .totyazi {
   font-size: 24px;
   font-weight: 600;
+  color: #403f3d;
 }
 .totfi {
   font-size: 24px;
   font-weight: 600;
+  color: #403f3d;
 }
 .address {
   display: flex;
@@ -2767,6 +2771,7 @@ header {
   background: transparent;
   color: #403f3d;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .registerbutonu {
@@ -2777,6 +2782,7 @@ header {
   background: transparent;
   color: #403f3d;
   cursor: pointer;
+  font-weight: 600;
 }
 
 /**/
