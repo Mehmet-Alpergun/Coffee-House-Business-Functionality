@@ -19,6 +19,23 @@ header {
   flex-direction: column;
   padding-bottom: 20px;
 }
+.cartagit {
+  text-decoration: none;
+  display: none;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.cartagit.active {
+  display: none;
+}
+.carresmi {
+  width: 20px;
+  height: 20px;
+}
+.carsayisi {
+  color: #403f3d;
+}
 .millk {
   display: flex;
   justify-content: center;
@@ -1063,6 +1080,7 @@ header {
 .real-description {
   font-size: 16px;
 }
+
 @media (min-width: 768px) {
   /* Buradaki stiller hem telefon hem tablet için geçerli olacak */
   .kucuk:hover {
@@ -1758,10 +1776,44 @@ header {
     flex-direction: column;
     gap: 8px;
   }
+  .cartagit {
+    text-decoration: none;
+    display: none;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartagit.active {
+    display: flex;
+  }
+  .carresmi {
+    width: 20px;
+    height: 20px;
+  }
+  .carsayisi {
+    color: #403f3d;
+  }
 }
 
 /* 💻 Desktop (1440px ve üstü) */
 @media (min-width: 1440px) {
+  .cartagit {
+    text-decoration: none;
+    display: none;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartagit.active {
+    display: flex;
+  }
+  .carresmi {
+    width: 20px;
+    height: 20px;
+  }
+  .carsayisi {
+    color: #403f3d;
+  }
   .ozel {
     margin-left: 180px;
   }
@@ -2790,24 +2842,6 @@ header {
 .cantacontainer {
   display: flex;
   gap: 32px;
-}
-
-.cartagit {
-  text-decoration: none;
-  display: none;
-  gap: 2px;
-  justify-content: center;
-  align-items: center;
-}
-.cartagit.active {
-  display: flex;
-}
-.carresmi {
-  width: 20px;
-  height: 20px;
-}
-.carsayisi {
-  color: #403f3d;
 }
 
 /**/
