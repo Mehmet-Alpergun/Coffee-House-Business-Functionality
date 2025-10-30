@@ -376,3 +376,22 @@ if (user) {
     carsayisi!.textContent = urunler.length.toString();
   }
 }
+
+console.log(
+  "project repo: https://github.com/Mehmet-Alpergun/Coffee-House-Business-Functionality/pull/1"
+);
+console.log(
+  "project repo: https://github.com/Mehmet-Alpergun/Coffee-House-Business-Functionality/pull/1"
+);
+console.log(
+  "project repo: https://github.com/Mehmet-Alpergun/Coffee-House-Business-Functionality/pull/1"
+);
+console.log(
+  "project repo: https://github.com/Mehmet-Alpergun/Coffee-House-Business-Functionality/pull/1"
+);
+console.log(
+  "project repo: https://github.com/Mehmet-Alpergun/Coffee-House-Business-Functionality/pull/1"
+);
+console.log(
+  "project repo: https://github.com/Mehmet-Alpergun/Coffee-House-Business-Functionality/pull/1"
+);
